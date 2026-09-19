@@ -59,14 +59,21 @@ export class ArSessionService {
 
         const { renderer, scene, camera } = this.mindarThree;
         renderer.outputColorSpace = THREE.SRGBColorSpace;
+        // Keep WebGL canvas transparent so the MindAR camera video shows through.
+        renderer.setClearColor(0x000000, 0);
+        renderer.setClearAlpha(0);
 
         this.labelRenderer = new CSS2DRenderer();
-        this.labelRenderer.setSize(container.clientWidth, container.clientHeight);
+        this.labelRenderer.setSize(container.clientWidth || window.innerWidth, container.clientHeight || window.innerHeight);
         const labelEl = this.labelRenderer.domElement;
         labelEl.className = 'ar-label-layer';
         labelEl.style.position = 'absolute';
         labelEl.style.inset = '0';
+        labelEl.style.width = '100%';
+        labelEl.style.height = '100%';
         labelEl.style.pointerEvents = 'none';
+        labelEl.style.background = 'transparent';
+        labelEl.style.zIndex = '3';
         container.appendChild(labelEl);
 
         this.resizeObserver = new ResizeObserver(() => {
@@ -90,17 +97,35 @@ export class ArSessionService {
           throw new Error('MindAR anchor group missing');
         }
 
-        // Semi-transparent plane matching target aspect (helps visualize lock)
+        // Start camera immediately so the live video background is visible while models load.
+        container.addEventListener('pointerdown', this.handlePointer);
+        await this.mindarThree.start();
+        this.zone.run(() => {
+          this.status = 'running';
+        });
+
+        renderer.setAnimationLoop(() => {
+          renderer.setClearColor(0x000000, 0);
+          renderer.render(scene, camera);
+          this.labelRenderer?.render(scene, camera);
+        });
+
+        // World-map texture as the tracked plane (visible when the printed map is found).
         const height = 1 / map.aspect;
+        const mapTexture = await new THREE.TextureLoader().loadAsync(map.image);
+        mapTexture.colorSpace = THREE.SRGBColorSpace;
         const plane = new THREE.Mesh(
           new THREE.PlaneGeometry(1, height),
           new THREE.MeshBasicMaterial({
-            color: 0x22c55e,
+            map: mapTexture,
             transparent: true,
-            opacity: 0.12,
+            opacity: 0.92,
             side: THREE.DoubleSide,
+            depthWrite: false,
           })
         );
+        // Slightly behind landmarks so towers stay on top of the map graphic.
+        plane.position.z = -0.001;
         group.add(plane);
 
         for (const landmark of landmarks) {
@@ -114,7 +139,6 @@ export class ArSessionService {
           wrapper.add(obj);
 
           const label = this.createFloatingLabel(landmark);
-          // Above the model along map normal (+Z after model rests on XY plane)
           label.position.set(0, 0, landmark.maxHeight + 0.035);
           wrapper.add(label);
 
@@ -123,17 +147,7 @@ export class ArSessionService {
           group.add(wrapper);
           this.landmarks.set(landmark.id, wrapper);
         }
-
-        container.addEventListener('pointerdown', this.handlePointer);
-
-        await this.mindarThree.start();
-        renderer.setAnimationLoop(() => {
-          renderer.render(scene, camera);
-          this.labelRenderer?.render(scene, camera);
-        });
       });
-
-      this.status = 'running';
     } catch (err) {
       console.error(err);
       this.status = 'error';
