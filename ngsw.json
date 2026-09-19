@@ -1,0 +1,139 @@
+{
+  "configVersion": 1,
+  "timestamp": 1789809416011,
+  "index": "/ar-world/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/ar-world/chunk-IEW7UVPP.js",
+        "/ar-world/chunk-JJEQNPH7.js",
+        "/ar-world/chunk-PZY4VB67.js",
+        "/ar-world/chunk-SCN4IE5C.js",
+        "/ar-world/chunk-TM6WTKPO.js",
+        "/ar-world/chunk-VFMDSBDS.js",
+        "/ar-world/chunk-WMUIBU6B.js",
+        "/ar-world/favicon.ico",
+        "/ar-world/index.html",
+        "/ar-world/main-WB7FJPHK.js",
+        "/ar-world/manifest.webmanifest",
+        "/ar-world/styles-QJGDIN4N.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/ar-world/ar/card.mind",
+        "/ar-world/ar/card.png",
+        "/ar-world/ar/world-map.mind",
+        "/ar-world/ar/world-map.png",
+        "/ar-world/icons/icon-128x128.png",
+        "/ar-world/icons/icon-144x144.png",
+        "/ar-world/icons/icon-152x152.png",
+        "/ar-world/icons/icon-192x192.png",
+        "/ar-world/icons/icon-384x384.png",
+        "/ar-world/icons/icon-512x512.png",
+        "/ar-world/icons/icon-72x72.png",
+        "/ar-world/icons/icon-96x96.png",
+        "/ar-world/landmarks.geojson",
+        "/ar-world/models/bigben.glb",
+        "/ar-world/models/burj.glb",
+        "/ar-world/models/cntower.glb",
+        "/ar-world/models/colosseum.glb",
+        "/ar-world/models/eiffel.glb",
+        "/ar-world/models/empire.glb",
+        "/ar-world/models/fuji.glb",
+        "/ar-world/models/goldengate.glb",
+        "/ar-world/models/greatwall.glb",
+        "/ar-world/models/liberty.glb",
+        "/ar-world/models/moai.glb",
+        "/ar-world/models/onewtc.glb",
+        "/ar-world/models/pisa.glb",
+        "/ar-world/models/pyramids.glb",
+        "/ar-world/models/redeemer.glb",
+        "/ar-world/models/shanghai.glb",
+        "/ar-world/models/sydney.glb",
+        "/ar-world/models/tajmahal.glb",
+        "/ar-world/models/windmill.glb"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/ar-world/ar/card.mind": "375d23336c355d61a8bbb692cf96e7f0e016ba51",
+    "/ar-world/ar/card.png": "34ab197b14f9343b225cda23273c1468ac83de95",
+    "/ar-world/ar/world-map.mind": "0d37767f2da70b0c9c9ce88d11b18a56ae9a58a1",
+    "/ar-world/ar/world-map.png": "1abc6683fbf7f50aafd3833089ba7e03fc1a0395",
+    "/ar-world/chunk-IEW7UVPP.js": "98a6181132d1c2f32ef8f1af217624cb8f6e3f20",
+    "/ar-world/chunk-JJEQNPH7.js": "bab8deb1ac6f6da178c658015644073fd3cbfbed",
+    "/ar-world/chunk-PZY4VB67.js": "5042d6cfd2b001814a08c64f4a29ff0adb168c52",
+    "/ar-world/chunk-SCN4IE5C.js": "fb2ce889253d2506a468d2f3f4cde2b88b77dac1",
+    "/ar-world/chunk-TM6WTKPO.js": "3e94dc98d42d1df3c2b880938b63b100c365fd62",
+    "/ar-world/chunk-VFMDSBDS.js": "744561df30d6374a317952928d13e6b308857281",
+    "/ar-world/chunk-WMUIBU6B.js": "e5b0830faac91eaec9e1cf44176deb86e1b5863b",
+    "/ar-world/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/ar-world/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/ar-world/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/ar-world/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/ar-world/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/ar-world/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/ar-world/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/ar-world/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/ar-world/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/ar-world/index.html": "bc1a5d2210e2f90b3ff8a37f5e33c96014181a9c",
+    "/ar-world/landmarks.geojson": "720e1881366367a710cdaf00ff5421b83b806ab9",
+    "/ar-world/main-WB7FJPHK.js": "2192204d4ceaf07889c583da8b8d186d389f0b82",
+    "/ar-world/manifest.webmanifest": "8926008316954700c20be0440f220d140053d0df",
+    "/ar-world/models/bigben.glb": "060e51a9ce2eef764208b13af3a2e6489f2477b7",
+    "/ar-world/models/burj.glb": "6a453d730afc19063b3b74b520dcfa5b1621aaaa",
+    "/ar-world/models/cntower.glb": "ae6e612f0db135b655193f5d5111f3e9fd7c1725",
+    "/ar-world/models/colosseum.glb": "beb93b0a975311e2c3f836b80c491bc9d547f2ea",
+    "/ar-world/models/eiffel.glb": "e5bdc084995f08b9890cb9910fdaf5c4903d0b1f",
+    "/ar-world/models/empire.glb": "ae1a9c49b5284f21c2ac5530e746e2f13619c7ab",
+    "/ar-world/models/fuji.glb": "6bc84888423178fba1bd0b27c1d7369f65a1d625",
+    "/ar-world/models/goldengate.glb": "3035d879e5459de586d03a5be0c5a80e4cb2ecb0",
+    "/ar-world/models/greatwall.glb": "502a8558408719d29a7b832b8b662a1aebd9ff43",
+    "/ar-world/models/liberty.glb": "1f4dd65c7652bd49d7e43d1b55691f7d5c9a68cf",
+    "/ar-world/models/moai.glb": "b9a202a555618a9d81324682f453d7e97b34ec9c",
+    "/ar-world/models/onewtc.glb": "ab51cc9e3a4ca503cdcce40d56cba4b81cd3da3f",
+    "/ar-world/models/pisa.glb": "0156a4d54782af9dde2da735d942ef3a9e8738b6",
+    "/ar-world/models/pyramids.glb": "2eee4a2a29cb78b84beb847eda387480a0b1d0c5",
+    "/ar-world/models/redeemer.glb": "67245729a21d932946e22235a7fe430ea32d16ee",
+    "/ar-world/models/shanghai.glb": "1d20aae5a348485a6e9d8e5d9fb2f4e174173454",
+    "/ar-world/models/sydney.glb": "c9ca4b04c92806af0b768c20fd73d87ac914f129",
+    "/ar-world/models/tajmahal.glb": "d6b8e818dc5e36b8b0390d95dd6fde352894e43b",
+    "/ar-world/models/windmill.glb": "d8ca62a7330862986a5a8b4eaac07a9ad43f88f5",
+    "/ar-world/styles-QJGDIN4N.css": "6bb49379fe99bb56ca995e5b6c9661eff6a0b114"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

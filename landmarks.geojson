@@ -1,0 +1,500 @@
+{
+  "type": "FeatureCollection",
+  "map": {
+    "image": "ar/world-map.png",
+    "mindTarget": "ar/world-map.mind",
+    "projection": "equirectangular",
+    "lonMin": -180,
+    "lonMax": 180,
+    "latMin": -90,
+    "latMax": 90,
+    "aspect": 2,
+    "printInstructions": "Print public/ar/world-map.png at A3/A4 (exact crop). Compile matching .mind if missing."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "eiffel",
+        "name": "Eiffel Tower",
+        "city": "Paris, France",
+        "description": "Iron lattice tower on the Champ de Mars. Height ~330 m.",
+        "modelUrl": "models/eiffel.glb",
+        "maxHeight": 0.12,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (free__la_tour_eiffel.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2945,
+          48.8584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pisa",
+        "name": "Leaning Tower of Pisa",
+        "city": "Pisa, Italy",
+        "description": "Freestanding bell tower of Pisa Cathedral, famous for its unintended tilt.",
+        "modelUrl": "models/pisa.glb",
+        "maxHeight": 0.1,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_pisa.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3966,
+          43.723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "liberty",
+        "name": "Statue of Liberty",
+        "city": "New York, USA",
+        "description": "Neoclassical sculpture on Liberty Island in New York Harbor.",
+        "modelUrl": "models/liberty.glb",
+        "maxHeight": 0.11,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_liberty.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0445,
+          40.6892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bigben",
+        "name": "Big Ben",
+        "city": "London, UK",
+        "description": "Elizabeth Tower and Great Bell at the Palace of Westminster.",
+        "modelUrl": "models/bigben.glb",
+        "maxHeight": 0.11,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_bigben.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1246,
+          51.5007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "colosseum",
+        "name": "Colosseum",
+        "city": "Rome, Italy",
+        "description": "Ancient amphitheatre and iconic symbol of Imperial Rome.",
+        "modelUrl": "models/colosseum.glb",
+        "maxHeight": 0.08,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_colosseum.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4922,
+          41.8902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "brandenburg",
+        "name": "Brandenburg Gate",
+        "city": "Berlin, Germany",
+        "description": "18th-century neoclassical monument on Pariser Platz.",
+        "modelUrl": "models/brandenburg.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/brandenburg-gate-germany-1df210f3fec941768ceb50c375856c10",
+        "author": "Fovea",
+        "license": "CC Attribution",
+        "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3777,
+          52.5163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "parthenon",
+        "name": "Parthenon",
+        "city": "Athens, Greece",
+        "description": "Temple on the Acropolis dedicated to Athena.",
+        "modelUrl": "models/parthenon.glb",
+        "maxHeight": 0.08,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/the-parthenon-f033a27945d948a88cb9a78c5c2a0512",
+        "author": "Théo Derory (paid store — use free CC alternative to ship)",
+        "license": "Sketchfab Standard (paid)",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7261,
+          37.9715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "basil",
+        "name": "Saint Basil's Cathedral",
+        "city": "Moscow, Russia",
+        "description": "Colorful onion-domed cathedral on Red Square.",
+        "modelUrl": "models/basil.glb",
+        "maxHeight": 0.1,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/saint-basil-s-cathedral-moscow-voxel-a609b73ba3a848e199a9d8cafb36e5d8",
+        "author": "Caturegli David (not freely downloadable)",
+        "license": "Not downloadable",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6231,
+          55.7525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tajmahal",
+        "name": "Taj Mahal",
+        "city": "Agra, India",
+        "description": "Ivory-white marble mausoleum on the Yamuna riverbank.",
+        "modelUrl": "models/tajmahal.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_taj.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0421,
+          27.1751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "greatwall",
+        "name": "Great Wall of China",
+        "city": "Badaling, China",
+        "description": "Historic fortification stretching across northern China.",
+        "modelUrl": "models/greatwall.glb",
+        "maxHeight": 0.07,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_greatwall.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5704,
+          40.4319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "burj",
+        "name": "Burj Khalifa",
+        "city": "Dubai, UAE",
+        "description": "World's tallest building at about 830 m.",
+        "modelUrl": "models/burj.glb",
+        "maxHeight": 0.14,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (burj_khalifa.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2744,
+          25.1972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "empire",
+        "name": "Empire State Building",
+        "city": "New York, USA",
+        "description": "Art Deco skyscraper completed in 1931.",
+        "modelUrl": "models/empire.glb",
+        "maxHeight": 0.13,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (empire_state_building.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9857,
+          40.7484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "onewtc",
+        "name": "One World Trade Center",
+        "city": "New York, USA",
+        "description": "Main building of the rebuilt World Trade Center complex.",
+        "modelUrl": "models/onewtc.glb",
+        "maxHeight": 0.13,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (one_world_trade_center.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0134,
+          40.7127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cntower",
+        "name": "CN Tower",
+        "city": "Toronto, Canada",
+        "description": "Communications and observation tower in downtown Toronto.",
+        "modelUrl": "models/cntower.glb",
+        "maxHeight": 0.14,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (gulas_cn_tower.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3871,
+          43.6426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shanghai",
+        "name": "Shanghai Tower",
+        "city": "Shanghai, China",
+        "description": "Twisting megatall skyscraper in Lujiazui.",
+        "modelUrl": "models/shanghai.glb",
+        "maxHeight": 0.14,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (shanghai_tower.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5055,
+          31.2336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pyramids",
+        "name": "Pyramids of Giza",
+        "city": "Giza, Egypt",
+        "description": "Ancient pyramid complex on the Giza plateau.",
+        "modelUrl": "models/pyramids.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_pyramids.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1342,
+          29.9792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "redeemer",
+        "name": "Christ the Redeemer",
+        "city": "Rio de Janeiro, Brazil",
+        "description": "Art Deco statue of Jesus Christ on Corcovado mountain.",
+        "modelUrl": "models/redeemer.glb",
+        "maxHeight": 0.11,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_christ.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2105,
+          -22.9519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sydney",
+        "name": "Sydney Opera House",
+        "city": "Sydney, Australia",
+        "description": "Performing-arts centre with iconic sail-like shells.",
+        "modelUrl": "models/sydney.glb",
+        "maxHeight": 0.08,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_sydney.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2153,
+          -33.8568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fuji",
+        "name": "Mount Fuji",
+        "city": "Honshu, Japan",
+        "description": "Iconic stratovolcano and Japan cultural symbol.",
+        "modelUrl": "models/fuji.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_fuji.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7274,
+          35.3606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "goldengate",
+        "name": "Golden Gate Bridge",
+        "city": "San Francisco, USA",
+        "description": "Suspension bridge spanning the Golden Gate strait.",
+        "modelUrl": "models/goldengate.glb",
+        "maxHeight": 0.08,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_goldengate.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4783,
+          37.8199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "moai",
+        "name": "Moai",
+        "city": "Easter Island, Chile",
+        "description": "Monolithic human figures carved by the Rapa Nui people.",
+        "modelUrl": "models/moai.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_moai.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.3493,
+          -27.1127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "windmill",
+        "name": "Dutch Windmill",
+        "city": "Kinderdijk, Netherlands",
+        "description": "Historic windmill landscape of the Netherlands.",
+        "modelUrl": "models/windmill.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_windmill.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6298,
+          51.8867
+        ]
+      }
+    }
+  ]
+}
