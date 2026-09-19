@@ -55,6 +55,10 @@ export class ArSessionService {
           imageTargetSrc: mindTargetUrl,
           filterMinCF: 0.0001,
           filterBeta: 0.001,
+          // Disable MindAR's default green scanning/loading overlays.
+          uiLoading: 'no',
+          uiScanning: 'no',
+          uiError: 'no',
         });
 
         const { renderer, scene, camera } = this.mindarThree;
@@ -112,14 +116,15 @@ export class ArSessionService {
 
         // World-map texture as the tracked plane (visible when the printed map is found).
         const height = 1 / map.aspect;
-        const mapTexture = await new THREE.TextureLoader().loadAsync(map.image);
+        const mapImageUrl = new URL(map.image, document.baseURI).href;
+        const mapTexture = await new THREE.TextureLoader().loadAsync(mapImageUrl);
         mapTexture.colorSpace = THREE.SRGBColorSpace;
         const plane = new THREE.Mesh(
           new THREE.PlaneGeometry(1, height),
           new THREE.MeshBasicMaterial({
             map: mapTexture,
             transparent: true,
-            opacity: 0.92,
+            opacity: 0.85,
             side: THREE.DoubleSide,
             depthWrite: false,
           })
