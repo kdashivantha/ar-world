@@ -1,59 +1,51 @@
 # ArWorld
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.18.
+Angular PWA: point your phone camera at a **printed world map** and see 3D landmarks (Eiffel Tower, Pisa, Statue of Liberty) placed by geography.
 
-## Development server
+**Live (after Pages is enabled):** https://kdashivantha.github.io/ar-world/
 
-To start a local development server, run:
+## Stack
 
-```bash
-ng serve
-```
+- Angular 21 + PWA (service worker)
+- MindAR image tracking + Three.js
+- GeoJSON landmarks + equirectangular projection
+- GitHub Pages deploy
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Quick start
 
 ```bash
-ng generate component component-name
+npm install --ignore-scripts
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open http://localhost:4200/ → **Open AR**. Use hash routes: `/#/ar`.
+
+`mind-ar` is installed with `--ignore-scripts` on Windows so the optional native `canvas` dependency is skipped (browser AR does not need it).
+
+### Optional asset tooling
 
 ```bash
-ng generate --help
+npm run generate:models   # procedural GLBs in public/models
+npm run compile:mind      # world-map.png → world-map.mind (needs Puppeteer/Chrome)
 ```
 
-## Building
+## Print & test
 
-To build the project run:
+1. Print [`public/ar/world-map.png`](public/ar/world-map.png) at A3/A4 (exact crop).
+2. If `world-map.mind` is missing, run `npm run compile:mind`, or the app falls back to MindAR’s sample [`card.png`](public/ar/card.png) / [`card.mind`](public/ar/card.mind).
+3. On a phone, use **HTTPS** (GitHub Pages URL). Allow camera → Start.
 
-```bash
-ng build
-```
+## Sketchfab models
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Demo ships small procedural GLBs. Replace files under `public/models/` with downloadable [Sketchfab](https://sketchfab.com/) GLBs and update attribution in [`public/landmarks.geojson`](public/landmarks.geojson).
 
-## Running unit tests
+## Map image credit
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Printable map is derived from Wikimedia Commons
+[Equirectangular projection](https://commons.wikimedia.org/wiki/File:Equirectangular_projection_SW.jpg) (public domain / free reuse — verify license on Commons for your use).
 
-```bash
-ng test
-```
+## Deploy
 
-## Running end-to-end tests
+Push to `master`/`main`. Enable **Settings → Pages → Source: GitHub Actions**.
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Repo: https://github.com/kdashivantha/ar-world.git

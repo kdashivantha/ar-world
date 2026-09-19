@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "map": {
+    "image": "ar/world-map.png",
+    "mindTarget": "ar/world-map.mind",
+    "projection": "equirectangular",
+    "lonMin": -180,
+    "lonMax": 180,
+    "latMin": -90,
+    "latMax": 90,
+    "aspect": 2,
+    "printInstructions": "Print public/ar/world-map.png at A3/A4 (exact crop). Compile matching .mind if missing."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "eiffel",
+        "name": "Eiffel Tower",
+        "city": "Paris, France",
+        "description": "Iron lattice tower on the Champ de Mars. Height ~330 m.",
+        "modelUrl": "models/eiffel.glb",
+        "maxHeight": 0.12,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/eiffel-tower-lowpoly-cd4ab153455e4755955909106912cba3",
+        "author": "ArWorld procedural sample (replace with Sketchfab download)",
+        "license": "Generated for demo",
+        "licenseUrl": "https://sketchfab.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.2945, 48.8584]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pisa",
+        "name": "Leaning Tower of Pisa",
+        "city": "Pisa, Italy",
+        "description": "Freestanding bell tower of Pisa Cathedral, famous for its unintended tilt.",
+        "modelUrl": "models/pisa.glb",
+        "maxHeight": 0.1,
+        "sketchfabUrl": "https://sketchfab.com/search?q=leaning+tower+pisa&type=models&features=downloadable",
+        "author": "ArWorld procedural sample (replace with Sketchfab download)",
+        "license": "Generated for demo",
+        "licenseUrl": "https://sketchfab.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.3966, 43.723]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "liberty",
+        "name": "Statue of Liberty",
+        "city": "New York, USA",
+        "description": "Neoclassical sculpture on Liberty Island in New York Harbor.",
+        "modelUrl": "models/liberty.glb",
+        "maxHeight": 0.11,
+        "sketchfabUrl": "https://sketchfab.com/search?q=statue+of+liberty&type=models&features=downloadable",
+        "author": "ArWorld procedural sample (replace with Sketchfab download)",
+        "license": "Generated for demo",
+        "licenseUrl": "https://sketchfab.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0445, 40.6892]
+      }
+    }
+  ]
+}
