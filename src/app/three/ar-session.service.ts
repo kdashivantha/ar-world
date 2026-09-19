@@ -64,8 +64,11 @@ export class ArSessionService {
         const { renderer, scene, camera } = this.mindarThree;
         renderer.outputColorSpace = THREE.SRGBColorSpace;
         // Keep WebGL canvas transparent so the MindAR camera video shows through.
+        scene.background = null;
         renderer.setClearColor(0x000000, 0);
         renderer.setClearAlpha(0);
+        renderer.domElement.style.background = 'transparent';
+        renderer.domElement.style.zIndex = '1';
 
         this.labelRenderer = new CSS2DRenderer();
         this.labelRenderer.setSize(container.clientWidth || window.innerWidth, container.clientHeight || window.innerHeight);
@@ -104,6 +107,7 @@ export class ArSessionService {
         // Start camera immediately — live video is the only background.
         container.addEventListener('pointerdown', this.handlePointer);
         await this.mindarThree.start();
+        this.ensureCameraVisible(container);
         this.hideMindArChrome(container);
         this.zone.run(() => {
           this.status = 'running';
@@ -111,6 +115,7 @@ export class ArSessionService {
 
         renderer.setAnimationLoop(() => {
           renderer.setClearColor(0x000000, 0);
+          renderer.setClearAlpha(0);
           renderer.render(scene, camera);
           this.labelRenderer?.render(scene, camera);
           // Keep MindAR scanning chrome suppressed if it reappears.
@@ -186,16 +191,39 @@ export class ArSessionService {
     this.status = 'stopped';
   }
 
+  private ensureCameraVisible(container: HTMLElement): void {
+    // MindAR defaults the video to z-index:-2 (behind opaque parents). Pull it forward.
+    const video =
+      (this.mindarThree?.video as HTMLVideoElement | undefined) ??
+      container.querySelector('video');
+    if (video) {
+      video.style.zIndex = '0';
+      video.style.opacity = '1';
+      video.style.visibility = 'visible';
+      video.style.display = 'block';
+      video.muted = true;
+      void video.play().catch(() => {
+        // Autoplay may already be running after getUserMedia.
+      });
+    }
+    if (this.mindarThree?.renderer?.domElement) {
+      const canvas = this.mindarThree.renderer.domElement as HTMLCanvasElement;
+      canvas.style.background = 'transparent';
+      canvas.style.zIndex = '1';
+    }
+  }
+
   private hideMindArChrome(container: HTMLElement): void {
     // Hide MindAR default overlay nodes (scanning / loading / error).
     container.querySelectorAll('.mindar-ui-overlay, .mindar-ui-loading, .mindar-ui-scanning, .mindar-ui-error').forEach((el) => {
       (el as HTMLElement).style.display = 'none';
     });
-    // MindAR also mounts an unused CSS3D layer; keep it non-interactive and invisible.
+    // MindAR also mounts an unused CSS3D layer; keep it non-interactive and clear.
     if (this.mindarThree?.cssRenderer?.domElement) {
       const cssEl = this.mindarThree.cssRenderer.domElement as HTMLElement;
       cssEl.style.pointerEvents = 'none';
       cssEl.style.background = 'transparent';
+      cssEl.style.zIndex = '2';
     }
   }
 
