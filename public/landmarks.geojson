@@ -21,10 +21,10 @@
         "description": "Iron lattice tower on the Champ de Mars. Height ~330 m.",
         "modelUrl": "models/eiffel.glb",
         "maxHeight": 0.12,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/eiffel-tower-model-3d-with-best-quality-c3391c293e70471e9a112f7855adcf2f",
-        "author": "shatlykxfree",
-        "license": "CC Attribution",
-        "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (free__la_tour_eiffel.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
       },
       "geometry": { "type": "Point", "coordinates": [2.2945, 48.8584] }
     },
@@ -181,12 +181,76 @@
         "description": "World's tallest building at about 830 m.",
         "modelUrl": "models/burj.glb",
         "maxHeight": 0.14,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/free-burj-khalifa-dubai-c1d6f5884c9c4a56b8d8f9c5555f1902",
-        "author": "SDC PERFORMANCE",
-        "license": "CC Attribution",
-        "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (burj_khalifa.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
       },
       "geometry": { "type": "Point", "coordinates": [55.2744, 25.1972] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "empire",
+        "name": "Empire State Building",
+        "city": "New York, USA",
+        "description": "Art Deco skyscraper completed in 1931.",
+        "modelUrl": "models/empire.glb",
+        "maxHeight": 0.13,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (empire_state_building.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": { "type": "Point", "coordinates": [-73.9857, 40.7484] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "onewtc",
+        "name": "One World Trade Center",
+        "city": "New York, USA",
+        "description": "Main building of the rebuilt World Trade Center complex.",
+        "modelUrl": "models/onewtc.glb",
+        "maxHeight": 0.13,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (one_world_trade_center.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": { "type": "Point", "coordinates": [-74.0134, 40.7127] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cntower",
+        "name": "CN Tower",
+        "city": "Toronto, Canada",
+        "description": "Communications and observation tower in downtown Toronto.",
+        "modelUrl": "models/cntower.glb",
+        "maxHeight": 0.14,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (gulas_cn_tower.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": { "type": "Point", "coordinates": [-79.3871, 43.6426] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shanghai",
+        "name": "Shanghai Tower",
+        "city": "Shanghai, China",
+        "description": "Twisting megatall skyscraper in Lujiazui.",
+        "modelUrl": "models/shanghai.glb",
+        "maxHeight": 0.14,
+        "sketchfabUrl": "https://github.com/HTMLElements/smart-webcomponents-angular/tree/51b58e6bdea720f345bad1db5a54481b51d153c5/demos/3d-chart/custom-models/src/assets",
+        "author": "smart-webcomponents-angular demo asset (shanghai_tower.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
+      },
+      "geometry": { "type": "Point", "coordinates": [121.5055, 31.2336] }
     },
     {
       "type": "Feature",
