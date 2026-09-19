@@ -1,5 +1,6 @@
 import { Injectable, inject, NgZone } from '@angular/core';
 import * as THREE from 'three';
+import { CSS2DObject, CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
 import { MapProjectionService } from '../geography/map-projection.service';
 import type { Landmark, MapConfig } from '../geography/landmark.model';
 import { ModelLoaderService } from './model-loader.service';
@@ -17,12 +18,15 @@ export class ArSessionService {
   private readonly models = inject(ModelLoaderService);
 
   private mindarThree: MindARThreeInstance | null = null;
+  private labelRenderer: CSS2DRenderer | null = null;
   private anchorGroup: THREE.Group | null = null;
   private landmarks = new Map<string, THREE.Object3D>();
+  private labelCleanups: Array<() => void> = [];
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
   private container: HTMLElement | null = null;
   private onSelect: ((id: string) => void) | null = null;
+  private resizeObserver: ResizeObserver | null = null;
 
   status: ArStatus = 'idle';
   errorMessage = '';
@@ -56,6 +60,23 @@ export class ArSessionService {
         const { renderer, scene, camera } = this.mindarThree;
         renderer.outputColorSpace = THREE.SRGBColorSpace;
 
+        this.labelRenderer = new CSS2DRenderer();
+        this.labelRenderer.setSize(container.clientWidth, container.clientHeight);
+        const labelEl = this.labelRenderer.domElement;
+        labelEl.className = 'ar-label-layer';
+        labelEl.style.position = 'absolute';
+        labelEl.style.inset = '0';
+        labelEl.style.pointerEvents = 'none';
+        container.appendChild(labelEl);
+
+        this.resizeObserver = new ResizeObserver(() => {
+          if (!this.labelRenderer || !this.container) {
+            return;
+          }
+          this.labelRenderer.setSize(this.container.clientWidth, this.container.clientHeight);
+        });
+        this.resizeObserver.observe(container);
+
         const light = new THREE.HemisphereLight(0xffffff, 0x444444, 1.1);
         scene.add(light);
         const dir = new THREE.DirectionalLight(0xffffff, 0.8);
@@ -83,13 +104,24 @@ export class ArSessionService {
         group.add(plane);
 
         for (const landmark of landmarks) {
+          const wrapper = new THREE.Group();
+          wrapper.name = `landmark-${landmark.id}`;
+          wrapper.userData['landmarkId'] = landmark.id;
+
           const obj = await this.models.loadLandmark(landmark);
-          const pos = this.projection.toThreePosition(landmark.longitude, landmark.latitude, map);
           // Models are Y-up; rotate so they stand out of the map (+Z toward camera).
           obj.rotation.x = Math.PI / 2;
-          obj.position.set(pos.x, pos.y, pos.z);
-          group.add(obj);
-          this.landmarks.set(landmark.id, obj);
+          wrapper.add(obj);
+
+          const label = this.createFloatingLabel(landmark);
+          // Above the model along map normal (+Z after model rests on XY plane)
+          label.position.set(0, 0, landmark.maxHeight + 0.035);
+          wrapper.add(label);
+
+          const pos = this.projection.toThreePosition(landmark.longitude, landmark.latitude, map);
+          wrapper.position.set(pos.x, pos.y, pos.z);
+          group.add(wrapper);
+          this.landmarks.set(landmark.id, wrapper);
         }
 
         container.addEventListener('pointerdown', this.handlePointer);
@@ -97,6 +129,7 @@ export class ArSessionService {
         await this.mindarThree.start();
         renderer.setAnimationLoop(() => {
           renderer.render(scene, camera);
+          this.labelRenderer?.render(scene, camera);
         });
       });
 
@@ -112,6 +145,19 @@ export class ArSessionService {
 
   async stop(): Promise<void> {
     this.container?.removeEventListener('pointerdown', this.handlePointer);
+    this.resizeObserver?.disconnect();
+    this.resizeObserver = null;
+
+    for (const cleanup of this.labelCleanups) {
+      cleanup();
+    }
+    this.labelCleanups = [];
+
+    if (this.labelRenderer) {
+      this.labelRenderer.domElement.remove();
+      this.labelRenderer = null;
+    }
+
     if (this.mindarThree) {
       try {
         this.mindarThree.renderer?.setAnimationLoop(null);
@@ -135,8 +181,30 @@ export class ArSessionService {
     this.status = 'stopped';
   }
 
+  private createFloatingLabel(landmark: Landmark): CSS2DObject {
+    const el = document.createElement('button');
+    el.type = 'button';
+    el.className = 'ar-landmark-label';
+    el.innerHTML = `<span class="ar-landmark-label__name">${landmark.name}</span><span class="ar-landmark-label__city">${landmark.city}</span>`;
+    el.style.pointerEvents = 'auto';
+
+    const onClick = (event: Event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      this.zone.run(() => this.onSelect?.(landmark.id));
+    };
+    el.addEventListener('click', onClick);
+    this.labelCleanups.push(() => el.removeEventListener('click', onClick));
+
+    return new CSS2DObject(el);
+  }
+
   private handlePointer = (event: PointerEvent): void => {
     if (!this.mindarThree || !this.container || !this.onSelect) {
+      return;
+    }
+    const target = event.target as HTMLElement | null;
+    if (target?.closest('.ar-landmark-label')) {
       return;
     }
     const rect = this.container.getBoundingClientRect();

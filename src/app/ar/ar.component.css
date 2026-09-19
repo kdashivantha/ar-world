@@ -112,3 +112,43 @@
 code {
   font-size: 0.8em;
 }
+
+/* Floating CSS2D landmark labels (rendered by Three CSS2DRenderer) */
+:host ::ng-deep .ar-label-layer {
+  z-index: 4;
+}
+
+:host ::ng-deep .ar-landmark-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid rgba(125, 211, 252, 0.45);
+  border-radius: 0.55rem;
+  background: rgba(8, 15, 28, 0.88);
+  color: #e8eef7;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transform: translate(-50%, -100%);
+  white-space: nowrap;
+  max-width: 11rem;
+}
+
+:host ::ng-deep .ar-landmark-label__name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+:host ::ng-deep .ar-landmark-label__city {
+  font-size: 0.62rem;
+  color: #9db0c9;
+  line-height: 1.1;
+}
+
+:host ::ng-deep .ar-landmark-label:active {
+  background: rgba(14, 40, 70, 0.95);
+}

@@ -21,10 +21,10 @@
         "description": "Iron lattice tower on the Champ de Mars. Height ~330 m.",
         "modelUrl": "models/eiffel.glb",
         "maxHeight": 0.12,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/eiffel-tower-lowpoly-cd4ab153455e4755955909106912cba3",
-        "author": "ArWorld procedural sample (replace with Sketchfab download)",
-        "license": "Generated for demo",
-        "licenseUrl": "https://sketchfab.com/"
+        "sketchfabUrl": "https://sketchfab.com/3d-models/eiffel-tower-model-3d-with-best-quality-c3391c293e70471e9a112f7855adcf2f",
+        "author": "shatlykxfree",
+        "license": "CC Attribution",
+        "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
       },
       "geometry": {
         "type": "Point",
