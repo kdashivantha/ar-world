@@ -83,6 +83,14 @@
   background: transparent !important;
 }
 
+/* Kill MindAR built-in scanning / loading chrome */
+.ar-container :is(.mindar-ui-overlay, .mindar-ui-loading, .mindar-ui-scanning, .mindar-ui-error) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 /* Floating CSS2D landmark labels (rendered by Three CSS2DRenderer) */
 :host ::ng-deep .ar-label-layer {
   z-index: 3 !important;

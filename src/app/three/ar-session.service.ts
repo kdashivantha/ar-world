@@ -101,9 +101,10 @@ export class ArSessionService {
           throw new Error('MindAR anchor group missing');
         }
 
-        // Start camera immediately so the live video background is visible while models load.
+        // Start camera immediately — live video is the only background.
         container.addEventListener('pointerdown', this.handlePointer);
         await this.mindarThree.start();
+        this.hideMindArChrome(container);
         this.zone.run(() => {
           this.status = 'running';
         });
@@ -112,27 +113,12 @@ export class ArSessionService {
           renderer.setClearColor(0x000000, 0);
           renderer.render(scene, camera);
           this.labelRenderer?.render(scene, camera);
+          // Keep MindAR scanning chrome suppressed if it reappears.
+          this.hideMindArChrome(container);
         });
 
-        // World-map texture as the tracked plane (visible when the printed map is found).
-        const height = 1 / map.aspect;
-        const mapImageUrl = new URL(map.image, document.baseURI).href;
-        const mapTexture = await new THREE.TextureLoader().loadAsync(mapImageUrl);
-        mapTexture.colorSpace = THREE.SRGBColorSpace;
-        const plane = new THREE.Mesh(
-          new THREE.PlaneGeometry(1, height),
-          new THREE.MeshBasicMaterial({
-            map: mapTexture,
-            transparent: true,
-            opacity: 0.85,
-            side: THREE.DoubleSide,
-            depthWrite: false,
-          })
-        );
-        // Slightly behind landmarks so towers stay on top of the map graphic.
-        plane.position.z = -0.001;
-        group.add(plane);
-
+        // No map-texture plane: physical map + camera feed are the background.
+        // 3D landmarks only — MindAR toggles anchor.group.visible on track/lost.
         for (const landmark of landmarks) {
           const wrapper = new THREE.Group();
           wrapper.name = `landmark-${landmark.id}`;
@@ -198,6 +184,19 @@ export class ArSessionService {
       this.container.replaceChildren();
     }
     this.status = 'stopped';
+  }
+
+  private hideMindArChrome(container: HTMLElement): void {
+    // Hide MindAR default overlay nodes (scanning / loading / error).
+    container.querySelectorAll('.mindar-ui-overlay, .mindar-ui-loading, .mindar-ui-scanning, .mindar-ui-error').forEach((el) => {
+      (el as HTMLElement).style.display = 'none';
+    });
+    // MindAR also mounts an unused CSS3D layer; keep it non-interactive and invisible.
+    if (this.mindarThree?.cssRenderer?.domElement) {
+      const cssEl = this.mindarThree.cssRenderer.domElement as HTMLElement;
+      cssEl.style.pointerEvents = 'none';
+      cssEl.style.background = 'transparent';
+    }
   }
 
   private createFloatingLabel(landmark: Landmark): CSS2DObject {
