@@ -26,10 +26,7 @@
         "license": "CC Attribution",
         "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.2945, 48.8584]
-      }
+      "geometry": { "type": "Point", "coordinates": [2.2945, 48.8584] }
     },
     {
       "type": "Feature",
@@ -41,14 +38,11 @@
         "modelUrl": "models/pisa.glb",
         "maxHeight": 0.1,
         "sketchfabUrl": "https://sketchfab.com/3d-models/the-leaning-tower-of-pisa-b627f6861e5d4cabb616a848e9552f55",
-        "author": "Zhang Shangbin (store model — purchase required)",
+        "author": "Zhang Shangbin (paid store — use free CC alternative to ship)",
         "license": "Sketchfab Standard (paid)",
         "licenseUrl": "https://sketchfab.com/licenses"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [10.3966, 43.723]
-      }
+      "geometry": { "type": "Point", "coordinates": [10.3966, 43.723] }
     },
     {
       "type": "Feature",
@@ -64,10 +58,183 @@
         "license": "CC Attribution",
         "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.0445, 40.6892]
-      }
+      "geometry": { "type": "Point", "coordinates": [-74.0445, 40.6892] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bigben",
+        "name": "Big Ben",
+        "city": "London, UK",
+        "description": "Elizabeth Tower and Great Bell at the Palace of Westminster.",
+        "modelUrl": "models/bigben.glb",
+        "maxHeight": 0.11,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/big-ben-bfbe143267a4449b98d4f10f9e7fd77e",
+        "author": "Zhang Shangbin (paid store — use free CC alternative to ship)",
+        "license": "Sketchfab Standard (paid)",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [-0.1246, 51.5007] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "colosseum",
+        "name": "Colosseum",
+        "city": "Rome, Italy",
+        "description": "Ancient amphitheatre and iconic symbol of Imperial Rome.",
+        "modelUrl": "models/colosseum.glb",
+        "maxHeight": 0.08,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/rome-colosseum-lowpoly-be6c525a15ca468e82978d1d787119aa",
+        "author": "Pikoandniki (paid/editorial — use free CC alternative to ship)",
+        "license": "Editorial (paid)",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.4922, 41.8902] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "brandenburg",
+        "name": "Brandenburg Gate",
+        "city": "Berlin, Germany",
+        "description": "18th-century neoclassical monument on Pariser Platz.",
+        "modelUrl": "models/brandenburg.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/brandenburg-gate-germany-1df210f3fec941768ceb50c375856c10",
+        "author": "Fovea",
+        "license": "CC Attribution",
+        "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.3777, 52.5163] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "parthenon",
+        "name": "Parthenon",
+        "city": "Athens, Greece",
+        "description": "Temple on the Acropolis dedicated to Athena.",
+        "modelUrl": "models/parthenon.glb",
+        "maxHeight": 0.08,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/the-parthenon-f033a27945d948a88cb9a78c5c2a0512",
+        "author": "Théo Derory (paid store — use free CC alternative to ship)",
+        "license": "Sketchfab Standard (paid)",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [23.7261, 37.9715] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "basil",
+        "name": "Saint Basil's Cathedral",
+        "city": "Moscow, Russia",
+        "description": "Colorful onion-domed cathedral on Red Square.",
+        "modelUrl": "models/basil.glb",
+        "maxHeight": 0.1,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/saint-basil-s-cathedral-moscow-voxel-a609b73ba3a848e199a9d8cafb36e5d8",
+        "author": "Caturegli David (not freely downloadable)",
+        "license": "Not downloadable",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [37.6231, 55.7525] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tajmahal",
+        "name": "Taj Mahal",
+        "city": "Agra, India",
+        "description": "Ivory-white marble mausoleum on the Yamuna riverbank.",
+        "modelUrl": "models/tajmahal.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/taj-mahal-7b43e635cbfb47719d5a124302b78579",
+        "author": "uday (not freely downloadable)",
+        "license": "Not downloadable",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [78.0421, 27.1751] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "greatwall",
+        "name": "Great Wall of China",
+        "city": "Badaling, China",
+        "description": "Historic fortification stretching across northern China.",
+        "modelUrl": "models/greatwall.glb",
+        "maxHeight": 0.07,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/great-wall-chinese-eaa499dd89ef464c839c45f9d97fef24",
+        "author": "Korneev Nikita Kirillovich (not freely downloadable)",
+        "license": "Not downloadable",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [116.5704, 40.4319] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "burj",
+        "name": "Burj Khalifa",
+        "city": "Dubai, UAE",
+        "description": "World's tallest building at about 830 m.",
+        "modelUrl": "models/burj.glb",
+        "maxHeight": 0.14,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/free-burj-khalifa-dubai-c1d6f5884c9c4a56b8d8f9c5555f1902",
+        "author": "SDC PERFORMANCE",
+        "license": "CC Attribution",
+        "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "geometry": { "type": "Point", "coordinates": [55.2744, 25.1972] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pyramids",
+        "name": "Pyramids of Giza",
+        "city": "Giza, Egypt",
+        "description": "Ancient pyramid complex on the Giza plateau.",
+        "modelUrl": "models/pyramids.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/egyptian-pyramids-giza-cairo-egypt-df4b6e9a25474ae9927fdb01f33ba561",
+        "author": "LibanCiel (paid store — use free CC alternative to ship)",
+        "license": "Sketchfab Standard (paid)",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [31.1342, 29.9792] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "redeemer",
+        "name": "Christ the Redeemer",
+        "city": "Rio de Janeiro, Brazil",
+        "description": "Art Deco statue of Jesus Christ on Corcovado mountain.",
+        "modelUrl": "models/redeemer.glb",
+        "maxHeight": 0.11,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/christ-the-redeemer-93064c7e27644070bfe3491de71e0a1d",
+        "author": "SQUIR3D (paid store — use free CC alternative to ship)",
+        "license": "Sketchfab Standard (paid)",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [-43.2105, -22.9519] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sydney",
+        "name": "Sydney Opera House",
+        "city": "Sydney, Australia",
+        "description": "Performing-arts centre with iconic sail-like shells.",
+        "modelUrl": "models/sydney.glb",
+        "maxHeight": 0.08,
+        "sketchfabUrl": "https://sketchfab.com/3d-models/sydney-opera-house-00f98d9438a8449192990b8dc76add1b",
+        "author": "CyArk (not freely downloadable)",
+        "license": "Not downloadable",
+        "licenseUrl": "https://sketchfab.com/licenses"
+      },
+      "geometry": { "type": "Point", "coordinates": [151.2153, -33.8568] }
     }
   ]
 }
