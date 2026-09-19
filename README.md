@@ -46,6 +46,16 @@ Printable map is derived from Wikimedia Commons
 
 ## Deploy
 
-Push to `master`/`main`. Enable **Settings → Pages → Source: GitHub Actions**.
+Push to `master`/`main`. The workflow builds the Angular app and publishes it to the **`gh-pages`** branch.
+
+In the repo: **Settings → Pages → Build and deployment**:
+
+- **Source:** Deploy from a branch
+- **Branch:** `gh-pages` / `/ (root)`
+
+Do **not** point Pages at `master` — that only renders this README.
+
+Live URL: https://kdashivantha.github.io/ar-world/  
+AR view: https://kdashivantha.github.io/ar-world/#/ar
 
 Repo: https://github.com/kdashivantha/ar-world.git
