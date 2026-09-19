@@ -26,7 +26,13 @@
         "license": "Demo asset — see upstream repo",
         "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
       },
-      "geometry": { "type": "Point", "coordinates": [2.2945, 48.8584] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2945,
+          48.8584
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -37,12 +43,18 @@
         "description": "Freestanding bell tower of Pisa Cathedral, famous for its unintended tilt.",
         "modelUrl": "models/pisa.glb",
         "maxHeight": 0.1,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/the-leaning-tower-of-pisa-b627f6861e5d4cabb616a848e9552f55",
-        "author": "Zhang Shangbin (paid store — use free CC alternative to ship)",
-        "license": "Sketchfab Standard (paid)",
-        "licenseUrl": "https://sketchfab.com/licenses"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_pisa.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [10.3966, 43.723] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3966,
+          43.723
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -53,12 +65,18 @@
         "description": "Neoclassical sculpture on Liberty Island in New York Harbor.",
         "modelUrl": "models/liberty.glb",
         "maxHeight": 0.11,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/statue-of-liberty-84094e8d5e724b5c882cf576ca12e44e",
-        "author": "Gravity Jack",
-        "license": "CC Attribution",
-        "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_liberty.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [-74.0445, 40.6892] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0445,
+          40.6892
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -69,12 +87,18 @@
         "description": "Elizabeth Tower and Great Bell at the Palace of Westminster.",
         "modelUrl": "models/bigben.glb",
         "maxHeight": 0.11,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/big-ben-bfbe143267a4449b98d4f10f9e7fd77e",
-        "author": "Zhang Shangbin (paid store — use free CC alternative to ship)",
-        "license": "Sketchfab Standard (paid)",
-        "licenseUrl": "https://sketchfab.com/licenses"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_bigben.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [-0.1246, 51.5007] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1246,
+          51.5007
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -85,12 +109,18 @@
         "description": "Ancient amphitheatre and iconic symbol of Imperial Rome.",
         "modelUrl": "models/colosseum.glb",
         "maxHeight": 0.08,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/rome-colosseum-lowpoly-be6c525a15ca468e82978d1d787119aa",
-        "author": "Pikoandniki (paid/editorial — use free CC alternative to ship)",
-        "license": "Editorial (paid)",
-        "licenseUrl": "https://sketchfab.com/licenses"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_colosseum.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [12.4922, 41.8902] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4922,
+          41.8902
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -106,7 +136,13 @@
         "license": "CC Attribution",
         "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
       },
-      "geometry": { "type": "Point", "coordinates": [13.3777, 52.5163] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3777,
+          52.5163
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -122,7 +158,13 @@
         "license": "Sketchfab Standard (paid)",
         "licenseUrl": "https://sketchfab.com/licenses"
       },
-      "geometry": { "type": "Point", "coordinates": [23.7261, 37.9715] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7261,
+          37.9715
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -138,7 +180,13 @@
         "license": "Not downloadable",
         "licenseUrl": "https://sketchfab.com/licenses"
       },
-      "geometry": { "type": "Point", "coordinates": [37.6231, 55.7525] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6231,
+          55.7525
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -149,12 +197,18 @@
         "description": "Ivory-white marble mausoleum on the Yamuna riverbank.",
         "modelUrl": "models/tajmahal.glb",
         "maxHeight": 0.09,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/taj-mahal-7b43e635cbfb47719d5a124302b78579",
-        "author": "uday (not freely downloadable)",
-        "license": "Not downloadable",
-        "licenseUrl": "https://sketchfab.com/licenses"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_taj.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [78.0421, 27.1751] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0421,
+          27.1751
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -165,12 +219,18 @@
         "description": "Historic fortification stretching across northern China.",
         "modelUrl": "models/greatwall.glb",
         "maxHeight": 0.07,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/great-wall-chinese-eaa499dd89ef464c839c45f9d97fef24",
-        "author": "Korneev Nikita Kirillovich (not freely downloadable)",
-        "license": "Not downloadable",
-        "licenseUrl": "https://sketchfab.com/licenses"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_greatwall.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [116.5704, 40.4319] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5704,
+          40.4319
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -186,7 +246,13 @@
         "license": "Demo asset — see upstream repo",
         "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
       },
-      "geometry": { "type": "Point", "coordinates": [55.2744, 25.1972] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2744,
+          25.1972
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -202,7 +268,13 @@
         "license": "Demo asset — see upstream repo",
         "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
       },
-      "geometry": { "type": "Point", "coordinates": [-73.9857, 40.7484] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9857,
+          40.7484
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -218,7 +290,13 @@
         "license": "Demo asset — see upstream repo",
         "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
       },
-      "geometry": { "type": "Point", "coordinates": [-74.0134, 40.7127] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0134,
+          40.7127
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -234,7 +312,13 @@
         "license": "Demo asset — see upstream repo",
         "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
       },
-      "geometry": { "type": "Point", "coordinates": [-79.3871, 43.6426] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3871,
+          43.6426
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -250,7 +334,13 @@
         "license": "Demo asset — see upstream repo",
         "licenseUrl": "https://github.com/HTMLElements/smart-webcomponents-angular"
       },
-      "geometry": { "type": "Point", "coordinates": [121.5055, 31.2336] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5055,
+          31.2336
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -261,12 +351,18 @@
         "description": "Ancient pyramid complex on the Giza plateau.",
         "modelUrl": "models/pyramids.glb",
         "maxHeight": 0.09,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/egyptian-pyramids-giza-cairo-egypt-df4b6e9a25474ae9927fdb01f33ba561",
-        "author": "LibanCiel (paid store — use free CC alternative to ship)",
-        "license": "Sketchfab Standard (paid)",
-        "licenseUrl": "https://sketchfab.com/licenses"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_pyramids.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [31.1342, 29.9792] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1342,
+          29.9792
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -277,12 +373,18 @@
         "description": "Art Deco statue of Jesus Christ on Corcovado mountain.",
         "modelUrl": "models/redeemer.glb",
         "maxHeight": 0.11,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/christ-the-redeemer-93064c7e27644070bfe3491de71e0a1d",
-        "author": "SQUIR3D (paid store — use free CC alternative to ship)",
-        "license": "Sketchfab Standard (paid)",
-        "licenseUrl": "https://sketchfab.com/licenses"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_christ.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [-43.2105, -22.9519] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2105,
+          -22.9519
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -293,12 +395,106 @@
         "description": "Performing-arts centre with iconic sail-like shells.",
         "modelUrl": "models/sydney.glb",
         "maxHeight": 0.08,
-        "sketchfabUrl": "https://sketchfab.com/3d-models/sydney-opera-house-00f98d9438a8449192990b8dc76add1b",
-        "author": "CyArk (not freely downloadable)",
-        "license": "Not downloadable",
-        "licenseUrl": "https://sketchfab.com/licenses"
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_sydney.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
       },
-      "geometry": { "type": "Point", "coordinates": [151.2153, -33.8568] }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2153,
+          -33.8568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fuji",
+        "name": "Mount Fuji",
+        "city": "Honshu, Japan",
+        "description": "Iconic stratovolcano and Japan cultural symbol.",
+        "modelUrl": "models/fuji.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_fuji.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7274,
+          35.3606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "goldengate",
+        "name": "Golden Gate Bridge",
+        "city": "San Francisco, USA",
+        "description": "Suspension bridge spanning the Golden Gate strait.",
+        "modelUrl": "models/goldengate.glb",
+        "maxHeight": 0.08,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_goldengate.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4783,
+          37.8199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "moai",
+        "name": "Moai",
+        "city": "Easter Island, Chile",
+        "description": "Monolithic human figures carved by the Rapa Nui people.",
+        "modelUrl": "models/moai.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_moai.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.3493,
+          -27.1127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "windmill",
+        "name": "Dutch Windmill",
+        "city": "Kinderdijk, Netherlands",
+        "description": "Historic windmill landscape of the Netherlands.",
+        "modelUrl": "models/windmill.glb",
+        "maxHeight": 0.09,
+        "sketchfabUrl": "https://github.com/Paulpousset/georankle-app/tree/c3fafed3f1092f23c029455d16f9e114f245c9d1/assets/models3d",
+        "author": "georankle-app asset (emblem_windmill.glb)",
+        "license": "Demo asset — see upstream repo",
+        "licenseUrl": "https://github.com/Paulpousset/georankle-app"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6298,
+          51.8867
+        ]
+      }
     }
   ]
 }
